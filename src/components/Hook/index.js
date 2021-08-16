@@ -99,7 +99,7 @@ const HookMqtt = () => {
       <Connection connect={mqttConnect} disconnect={mqttDisconnect} connectBtn={connectStatus} />
       <QosOption.Provider value={qosOption}>
         <Subscriber sub={mqttSub} unSub={mqttUnSub} showUnsub={isSubed} />
-        <Publisher publish={mqttPublish} />
+        {/* <Publisher publish={mqttPublish} /> */}
       </QosOption.Provider>
       <Receiver payload={payload}/>
     </>

@@ -44,6 +44,7 @@ const Connection = ({ connect, disconnect, connectBtn }) => {
     <Form
       layout="vertical"
       name="basic"
+      style={{display: 'none'}}
       form={form}
       initialValues={record}
       onFinish={onFinish}
